@@ -6,3 +6,4 @@ build
 dist
 package-lock.json
 *.croakerr
+**/*.d.ts
