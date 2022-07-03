@@ -1,5 +1,5 @@
 {
-    "name": "Plex",
+    "name": "CroakerrForPlex",
     "version": "0.0.1",
     "description": "Plex Croakerr integration plugin. Posts to discord channels based on incoming events from Plex.",
     "author": "Croakerr",
