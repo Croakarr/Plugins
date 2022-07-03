@@ -1,0 +1,7 @@
+{
+    "name": "Plex",
+    "version": "0.0.1",
+    "description": "Plex Croakerr integration plugin. Posts to discord channels based on incoming events from Plex.",
+    "author": "Croakerr",
+    "entrypoint": "dist/entrypoint.js"
+}

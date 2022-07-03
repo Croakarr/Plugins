@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "./build/",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "noEmit": false
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@corakerr/plugin-croakerr-for-icue",
+  "version": "0.1.0",
+  "description": "ICue Croakerr integration plugin. Flashes your LEDs the color of the service for which a notification has been received.",
+  "main": "dist/entrypoint.js",
+  "scripts": {
+    "build": "tsc && rollup build/entrypoint.js --format cjs --file dist/entrypoint.js"
+  },
+  "author": "Croakerr",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "cue-sdk": "^3.1.0"
+  }
+}

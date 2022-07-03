@@ -1,0 +1,7 @@
+{
+    "name": "Radarr",
+    "version": "0.0.1",
+    "description": "Radarr Croakerr integration plugin. Posts to discord channels based on incoming events from Radarr.",
+    "author": "Croakerr",
+    "entrypoint": "dist/entrypoint.js"
+}

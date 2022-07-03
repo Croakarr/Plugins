@@ -1,0 +1,7 @@
+{
+    "name": "CroakerrForiCue",
+    "version": "1.0.0",
+    "description": "CroakerrForiCue integration plugin. Flashes your LEDs the color of the service for which a notification has been received.",
+    "author": "Croakerr",
+    "entrypoint": "dist/entrypoint.js"
+}

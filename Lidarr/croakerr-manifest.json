@@ -1,0 +1,7 @@
+{
+    "name": "Lidarr",
+    "version": "0.0.1",
+    "description": "Lidarr Croakerr integration plugin. Posts to discord channels based on incoming events from Lidarr.",
+    "author": "Croakerr",
+    "entrypoint": "dist/entrypoint.js"
+}

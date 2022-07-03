@@ -1,0 +1,14 @@
+{
+  "name": "croakerr-template",
+  "version": "0.0.1",
+  "description": "template Croakerr plugin.",
+  "main": "dist/entrypoint.js",
+  "scripts": {
+    "build": "tsc && rollup -c"
+  },
+  "author": "Croakerr",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

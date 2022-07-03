@@ -1,0 +1,14 @@
+{
+  "name": "@corakerr/plugin-radarr",
+  "version": "0.1.0",
+  "description": "Radarr Croakerr integration plugin. Posts to discord channels based on incoming events from Radarr.",
+  "main": "dist/entrypoint.js",
+  "scripts": {
+    "build": "tsc && rollup -c"
+  },
+  "author": "Croakerr",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

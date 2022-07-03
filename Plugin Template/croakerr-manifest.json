@@ -1,0 +1,7 @@
+{
+    "name": "Sample",
+    "version": "1.0.0",
+    "description": "My sample Croakerr plugin",
+    "author": "Me",
+    "entrypoint": "dist/entrypoint.js"
+}

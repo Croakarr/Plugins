@@ -1,0 +1,8 @@
+release-manager.js
+build.ps1
+bundles
+node_modules
+build
+dist
+package-lock.json
+*.croakerr
