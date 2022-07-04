@@ -101,5 +101,8 @@ export function enable({ croakerr, logger } = { croakerr: undefined, logger: und
         croakerr.registerListener("lidarr.grab", () => animateLEDs("lidarr"));
         croakerr.registerListener("lidarr.download", () => animateLEDs("lidarr"));
         croakerr.registerListener("plex.library.new", () => animateLEDs("plex"));
+        return [true, null]
+    } else {
+        return [false, "unable to locate plugin interface"]
     }
 }
