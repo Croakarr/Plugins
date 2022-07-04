@@ -1,12 +1,29 @@
+import { existsSync, readFileSync, writeFileSync } from "fs";
 
 const logo = "https://avatars.githubusercontent.com/u/28475832";
 const url = "https://discordapp.com/api/webhooks/992454432916766930/db_hAFzowWd2uMxY8sam0HXaeSBkvCgDOCOusOwn5AuJwpN8t5dYkTCMy6lojPAXUEll";
 
-export function enable({ croakerr, logger }) {
-    logger.debug("Incoming log message from Lidarr plugin")
-    croakerr.registerListener("lidarr.test", (data) => handleTest(croakerr, logger, data));
-    croakerr.registerListener("lidarr.download", (data) => handleDownload(croakerr, logger, data));
-    croakerr.registerListener("lidarr.grab", (data) => handleGrab(croakerr, logger, data));
+export async function enable({ croakerr, logger }): Promise<[boolean, Error | null]> {
+    try {
+        // if(!existsSync(__dirname+"/settings.json"))
+
+        logger.debug("Incoming log message from Lidarr plugin")
+
+        // let answer = await croakerr.prompt({
+        //     type: 'input',
+        //     name: 'username',
+        //     message: 'What is your username?'
+        // });
+
+        // console.log("Hello, ", answer.username)
+
+        croakerr.registerListener("lidarr.test", (data) => handleTest(croakerr, logger, data));
+        croakerr.registerListener("lidarr.download", (data) => handleDownload(croakerr, logger, data));
+        croakerr.registerListener("lidarr.grab", (data) => handleGrab(croakerr, logger, data));
+        return [true, null];
+    } catch (e) {
+        return [false, e]
+    }
 }
 
 
